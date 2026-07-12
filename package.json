@@ -2,13 +2,19 @@
   "name": "chatting",
   "version": "1.0.0",
   "description": "a chatting app with blue tick feature",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "author": "Pankaj",
   "license": "MIT",
   "dependencies": {
-    "express": "^5.2.1"
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.4",
+    "nodemon": "^3.1.14"
   }
 }
