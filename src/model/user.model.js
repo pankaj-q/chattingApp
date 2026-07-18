@@ -21,6 +21,18 @@ const userSchema = new mongoose.Schema({
         required: true,
         minLength: 6,
         match: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/
+    },
+    provider: {
+       type: String,
+       required: true,
+    },
+    googleId : {
+        type: String,
+        required: true,
+    },
+    githubId: {
+        type: String,
+        required: true,
     }
 })
 
